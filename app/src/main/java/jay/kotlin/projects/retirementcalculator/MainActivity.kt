@@ -45,6 +45,8 @@ class MainActivity : AppCompatActivity() {
                     Analytics.trackEvent("Current age cannot be greater than retirement age", properties)
                     Toast.makeText(this, "Current age cannot be greater than retirement age", Toast.LENGTH_LONG).show()
                 }
+
+                resultTextView.text = "At the current rate of $interestRate%, saving \$$monthly"
             }
             catch (e:Exception){
                 e.printStackTrace()
